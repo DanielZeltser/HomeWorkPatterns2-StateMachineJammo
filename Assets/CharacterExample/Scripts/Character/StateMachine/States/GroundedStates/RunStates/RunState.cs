@@ -2,7 +2,7 @@ using UnityEngine.InputSystem;
 
 public class RunState : GroundedState
 {
-    public readonly RunningStateConfig Config;
+    protected readonly RunningStateConfig Config;
 
     public RunState(IStateSwitcher stateSwitcher, StateMachineData data, Character character) : base(stateSwitcher, data, character)
         => Config = character.Config.RunningStateConfig;
